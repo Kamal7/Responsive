@@ -30,8 +30,7 @@
     @content;
 }
 
-media queries using breakpoints
-
+/* media queries using breakpoints */
 
 @mixin breakpoint($point) {
     @if $point==1600 {
