@@ -1,2 +1,2 @@
-#SavaScript all chapter 
+JavaScript all chapter 
 
