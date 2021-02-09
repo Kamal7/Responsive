@@ -13,6 +13,7 @@ function sqr() {
     return n * n;
 }
 sqr();
+console.log(sqr());
 
 
 // Object 

@@ -4,11 +4,14 @@ function example(a, b) {
 }
 
 // 1. A function store in variable
+
 var storeVariable = example(2, 4);
 console.log(storeVariable);
 console.log(typeof storeVariable);
 
+
 // 2. A function store in array
+
 var storeArray = [];
 storeArray.push(example);
 console.log(storeArray);

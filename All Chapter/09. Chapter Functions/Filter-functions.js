@@ -1,11 +1,27 @@
 var array = [];
-array.filter(function (value, index, arr) {});
+array.filter(function (value, index, arr) { });
 
 
 var array = [4, 6, 8, 9, 12, 53, -17, 2, 5, 7, 31, 97, -1, 17];
+
 array.filter(function (value) {
     console.log(value);
 });
+
+var results = array.filter(function (value) {
+    return value % 2 === 1
+});
+console.log(results);
+
+var results1 = array.filter(function (value) {
+    return value % 2 === 0
+});
+console.log(results1);
+
+var results2 = array.filter(function (value) {
+    return value > 4
+});
+console.log(results2);
 
 
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];

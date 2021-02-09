@@ -1,4 +1,5 @@
 var x = 10; // global execution context
+
 function foo() {
     // Execution context(foo)
     var y = 20;
@@ -17,13 +18,15 @@ var result = foo();
 console.log(result);
 
 
-function closer() {
-    var c = 20;
 
-    function doo() {
-        console.log(c);
+
+// this is closure function 
+function foo() {
+    var x = 10;
+    function closure() {
+        console.log(x);
     }
-    return doo;
+    return closure;
 }
-var loo = closer();
-console.dir(loo);
+var doo = foo();
+console.dir(doo);

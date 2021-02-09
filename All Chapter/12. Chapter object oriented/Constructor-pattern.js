@@ -1,5 +1,5 @@
 // Constructor Pattern
-var constructorPattern = function constructorPattern(width, height) {
+var ConstructorPattern = function constructorPattern(width, height) {
     this.width = width
     this.height = height
     this.print = function () {
@@ -13,5 +13,5 @@ var constructorPattern = function constructorPattern(width, height) {
         console.log('My is height ' + this.height);
     }
 }
-var result = new constructorPattern(23, 45);
-result.print();
+var result = new ConstructorPattern(23, 45);
+result.print(); 

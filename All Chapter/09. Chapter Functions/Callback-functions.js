@@ -1,4 +1,16 @@
 //========== CallBack Fuctions ========== 
+function sum(a, b) {
+    return a + b;
+}
+function sample(a, b) {
+    c = a + b;
+    d = a - b;
+    return sum(c, d)
+}
+console.log(sample(3, 4));
+
+
+// function callback 
 function sumcall(a, b) {
     return a + b;
 }
@@ -16,5 +28,10 @@ console.log(cboo);
 
 var result = callback(10, 5, function (ao, bo) {
     return ao - bo;
+})
+console.log(result);
+
+var result = callback(10, 5, function (ao, bo) {
+    return ao + bo;
 })
 console.log(result);

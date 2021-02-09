@@ -1,15 +1,22 @@
-switch (expression) {
-    case x:
-        // code block
-        break;
-    case y:
-        // code block
-        break;
-    default:
-        // code block
-}
+// switch (expression) {
+//     case x:
+//         // code block
+//         break;
+//     case y:
+//         // code block
+//         break;
+//     default:
+//         // code block
+// }
+var date = new Date();
 
-switch (new Date().getDay()) {
+console.log(date);
+
+var today = date.getDay();
+
+console.log(today);
+
+switch (today) {
     case 0:
         console.log(day = "Sunday");
         break;

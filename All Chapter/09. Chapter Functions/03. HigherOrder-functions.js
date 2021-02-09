@@ -1,10 +1,13 @@
 //========== Higher Order Fuctions ========== 
-
+function example(a, b) {
+    return a + b;
+}
 function higherOrderfunction(a, b, func) {
     var c = a + b;
     console.log(c);
     var d = a - b;
     console.log(d);
+
     return function () {
         var m = func(a, b);
         console.log(m);

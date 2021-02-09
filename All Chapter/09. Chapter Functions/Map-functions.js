@@ -1,7 +1,13 @@
 // ========== Map ========== 
 
+var arr = [1, 2, 3]
+var returnArr = arr.map(function (value) {
+    return 3;
+})
+console.log(returnArr);
+
 arrays = [];
-arrays.map(function (value, index, arr) {});
+arrays.map(function (value, index, arr) { });
 
 arr = [1, 2, 3];
 var result = arr.map(function (params) {

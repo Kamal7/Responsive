@@ -29,10 +29,34 @@ console.log(sums);
 
 // Step 05 forEach Details
 var arrays = [1, 2, 3];
+function forEachs(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+forEachs(arrays);
 
-function forEach(arrays, callback) {
-    for (var i = 0; i < arrays.length; i++) {
-        callback(arrays[i], i, arrays);
+
+// Callback just value 
+var arrys = [1, 2, 3, 4, 5, 6];
+function foreaches(arr, cb) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+        cb(arr[i])
+
+    }
+}
+sums = 0;
+foreaches(arrys, function (parms) {
+    console.log(parms);
+    sums += parms
+})
+console.log(sums);
+
+// Callback function 
+function forEach(arrs, callback) {
+    for (var i = 0; i < arrs.length; i++) {
+        callback(arrs[i], i, arrs);
     }
 }
 var sum = 0;
